@@ -12,10 +12,15 @@ class Animal:
 
 
 class Cat(Animal):
-    pass
+    def speak(self):
+        print('Meowwwww')
+
+class Dog(Animal):
+    def speak(self):
+        print('Woof woof')
 
 
-dog = Animal("Fido", 3, "Dog")
+dog = Dog("Fido", 3, "Dog")
 cat = Cat("Whiskers", 2, "Cat")
 cat.speak()
 cat.run()
